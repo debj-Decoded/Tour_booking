@@ -458,7 +458,7 @@ const TourCard = ({ tour, onBook }) => {
 
         <div className="flex items-center justify-between pt-4 border-t border-gray-100">
           <div>
-            <span className="text-2xl font-bold text-gray-900">${tour.price}</span>
+            <span className="text-2xl font-bold text-gray-900">₹{tour.price}</span>
             <span className="text-gray-500 text-sm">/person</span>
           </div>
           <button 
@@ -524,7 +524,7 @@ const BookingModal = ({ tour, isOpen, onClose }) => {
                 <div>
                   <h3 className="font-bold text-lg">{tour.title}</h3>
                   <p className="text-gray-500 text-sm">{tour.location}</p>
-                  <p className="text-orange-600 font-bold mt-1">${tour.price}/person</p>
+                  <p className="text-orange-600 font-bold mt-1">₹{tour.price}/person</p>
                 </div>
               </div>
 
@@ -616,7 +616,7 @@ const BookingModal = ({ tour, isOpen, onClose }) => {
 
               <div className="bg-orange-50 rounded-xl p-4 flex justify-between items-center">
                 <span className="font-medium text-gray-700">Total Price</span>
-                <span className="text-2xl font-bold text-orange-600">${totalPrice}</span>
+                <span className="text-2xl font-bold text-orange-600">₹{totalPrice}</span>
               </div>
 
               <div className="flex gap-4">
@@ -664,7 +664,7 @@ const BookingModal = ({ tour, isOpen, onClose }) => {
                 </div>
                 <div className="border-t pt-3 flex justify-between text-lg">
                   <span className="font-bold">Total</span>
-                  <span className="font-bold text-orange-600">${totalPrice}</span>
+                  <span className="font-bold text-orange-600">₹{totalPrice}</span>
                 </div>
               </div>
 
@@ -1073,13 +1073,13 @@ const ContactPage = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+91 556600-0557", "+1 (555) 987-6543"],
+      details: ["+91 9040413920", "+91 9040423920"],
       desc: "Mon-Fri from 8am to 6pm EST"
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["hello@wanderlust.com", "support@wanderlust.com"],
+      details: ["debashish@wanderlust.com", "support@wanderlust.com"],
       desc: "We reply within 24 hours"
     },
     {
